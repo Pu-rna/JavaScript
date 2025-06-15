@@ -6,9 +6,9 @@ console.log(typeof (score));
 
 let marks = "20";
 console.log(typeof marks); //output is => string
-let valueInNumber = Number(marks);
+let valueInNumber = Number(marks);//it convert the string into number.
 console.log(typeof valueInNumber);//op is => number
-console.log(valueInNumber);//it convert the string into number.
+console.log(valueInNumber);
 
 
 let id = "22ab";
