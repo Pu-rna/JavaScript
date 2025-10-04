@@ -7,11 +7,27 @@
 </head>
 <body>
     <script>
-        const requestURL = 'https://github.com/Pu-rna/JavaScript';
+        const requestURL = 'https://api.github.com/users/hiteshchoudhary';
         const xhr = new XMLHttpRequest();
         xhr.open('GET',requestURL);
-        console.log("HERE");
-        xhr.send;
+        xhr.onreadystatechange = function() {
+            console.log(xhr.readyState);
+            if(xhr.readyState === 4) {
+                //console.log(this.responseText);
+                
+                //this responseTEXT is in string format
+                //we need to convert it into JSON format
+                //JSON.parse() - to convert string into JSON format
+                //JSON.stringify() - to convert JSON format into string format
+                const data = JSON.parse(this.responseText);
+                console.log(data);
+                console.log(typeof data);
+                console.log(data.followers);  
+                console.log(data.avatar_url);
+                              
+            } 
+        }  
+        xhr.send();
     </script>
 </body>
 </html>
