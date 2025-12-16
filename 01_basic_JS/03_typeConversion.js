@@ -8,7 +8,7 @@ let marks = "20";
 console.log(typeof marks); //output is => string
 let valueInNumber = Number(marks);//it convert the string into number.
 console.log(typeof valueInNumber);//op is => number
-console.log(valueInNumber);
+console.log(valueInNumber);//20
 
 
 let id = "22ab";
@@ -82,7 +82,7 @@ console.log("1"+2+2);//122
 console.log(1+2+"3");//33
 
 console.log(true);//op =>true
-console.log(+true);// whrn we increment the 'true' value it convert in number so op is => 1
+console.log(+true);// when we increment the 'true' value it convert in number so op is => 1
 console.log(+" ");//=>0
             
                 //!!!!!!!!!!!!!!!!//
